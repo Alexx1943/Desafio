@@ -25,7 +25,7 @@ public class PedidoUtils {
         return new ArrayList<>(List.of(produto1, produto2, produto3, produto4, produto5));
     }
 
-    public List<Pedido> listaPedidos() {
+    public List<Pedido> getListaPedidos() {
 
         var pedido1 = Pedido.builder()
                 .id(1L).numeroPedido(1L)
@@ -65,6 +65,40 @@ public class PedidoUtils {
                 .dataHoraAtualizacao(LocalDateTime.now()).build();
 
         return new ArrayList<>(List.of(pedido1, pedido2, pedido3));
+    }
+
+    public List<Pedido> getPedidos() {
+
+        var pedido = Pedido.builder()
+                .id(1L).numeroPedido(1L)
+                .tipoDocumento(TipoDocumento.CNPJ)
+                .documentoCliente("CPF")
+                .canal(Canal.WEB)
+                .status(Status.ATIVO)
+                .listPedidos(listaItens())
+                .valorTotal(5.0)
+                .gerente("Gerente")
+                .dataHoraCriacao(LocalDateTime.now())
+                .dataHoraAtualizacao(LocalDateTime.now()).build();
+
+        return new ArrayList<>(List.of(pedido));
+    }
+
+    public Pedido getPedido() {
+
+        var pedido = Pedido.builder()
+                .id(1L).numeroPedido(1L)
+                .tipoDocumento(TipoDocumento.CNPJ)
+                .documentoCliente("CPF")
+                .canal(Canal.WEB)
+                .status(Status.ATIVO)
+                .listPedidos(listaItens())
+                .valorTotal(5.0)
+                .gerente("Gerente")
+                .dataHoraCriacao(LocalDateTime.now())
+                .dataHoraAtualizacao(LocalDateTime.now()).build();
+
+        return pedido;
     }
 
 }
