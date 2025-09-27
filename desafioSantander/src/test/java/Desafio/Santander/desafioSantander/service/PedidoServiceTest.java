@@ -90,6 +90,48 @@ class PedidoServiceTest {
                 .isInstanceOf(ResponseStatusException.class);
     }
 
+    @Test
+    @Order(5)
+    @DisplayName("delete exclui pedido pelo id")
+    void deleteExcluiPedidoId() {
+
+        var pedidoToRemove = pedidoUtils.getListaPedidos().getFirst();
+
+        BDDMockito.when(repository.findById(pedidoToRemove.getId())).thenReturn(Optional.of(pedidoToRemove));
+        BDDMockito.doNothing().when(repository).delete(pedidoToRemove);
+
+        service.delete(pedidoToRemove.getId());
+
+        Assertions.assertThatNoException().isThrownBy(() -> service.delete(pedidoToRemove.getId()));
+    }
+
+    @Test
+    @Order(6)
+    @DisplayName("delete lança um ResponseStatusException quando o id não existe")
+    void deleteThrowsResponseStatusException_whenArgumentIsNotFound() {
+
+        var id = 90L;
+
+        BDDMockito.when(repository.findById(id)).thenReturn(Optional.empty());
+
+        Assertions.assertThatException().isThrownBy(() -> service.delete(id)).isInstanceOf(ResponseStatusException.class);
+    }
+
+    @Test
+    @Order(7)
+    @DisplayName("deleteAll exclui todos os pedidos da lista ")
+    void deleteAllExcluiTodosPedidos() {
+
+        var pedidosToRemove = pedidoUtils.getListaPedidos();
+
+        BDDMockito.doNothing().when(repository).deleteAll();
+
+        service.deleteAll();
+
+        Assertions.assertThatNoException().isThrownBy(() -> service.deleteAll());
+    }
+
+
 
 
 }
