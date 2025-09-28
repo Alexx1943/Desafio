@@ -1,0 +1,166 @@
+[
+  {
+    "id": 1,
+    "numeroPedido": 1,
+    "tipoDocumento": "CNPJ",
+    "documentoCliente": "CPF",
+    "canal": "WEB",
+    "status": "ATIVO",
+    "valorTotal": 5.0,
+    "gerente": "Gerente",
+    "dataHoraCriacao": null,
+    "dataHoraAtualizacao": null,
+    "listPedidos": [
+      {
+        "id": 1,
+        "codigoProduto": 1,
+        "nomeProduto": "Produto1",
+        "quantidade": 1,
+        "precoUnitario": 1.0,
+        "tipoProduto": "BEBIDA"
+      },
+      {
+        "id": 2,
+        "codigoProduto": 1,
+        "nomeProduto": "Produto2",
+        "quantidade": 1,
+        "precoUnitario": 1.0,
+        "tipoProduto": "COMIDA"
+      },
+      {
+        "id": 3,
+        "codigoProduto": 1,
+        "nomeProduto": "Produto3",
+        "quantidade": 1,
+        "precoUnitario": 1.0,
+        "tipoProduto": "ELETRODOMESTICO"
+      },
+      {
+        "id": 4,
+        "codigoProduto": 1,
+        "nomeProduto": "Produto4",
+        "quantidade": 1,
+        "precoUnitario": 1.0,
+        "tipoProduto": "ELETRONICO"
+      },
+      {
+        "id": 5,
+        "codigoProduto": 1,
+        "nomeProduto": "Produto5",
+        "quantidade": 1,
+        "precoUnitario": 1.0,
+        "tipoProduto": "ROUPAS"
+      }
+    ]
+  },
+
+  {
+    "id": 2,
+    "numeroPedido": 1,
+    "tipoDocumento": "CNPJ",
+    "documentoCliente": "CPF",
+    "canal": "EMAIL",
+    "status": "INATIVO",
+    "valorTotal": 5.0,
+    "gerente": "Gerente",
+    "dataHoraCriacao": null,
+    "dataHoraAtualizacao": null,
+    "listPedidos": [
+      {
+        "id": 1,
+        "codigoProduto": 1,
+        "nomeProduto": "Produto1",
+        "quantidade": 1,
+        "precoUnitario": 1.0,
+        "tipoProduto": "BEBIDA"
+      },
+      {
+        "id": 2,
+        "codigoProduto": 1,
+        "nomeProduto": "Produto2",
+        "quantidade": 1,
+        "precoUnitario": 1.0,
+        "tipoProduto": "COMIDA"
+      },
+      {
+        "id": 3,
+        "codigoProduto": 1,
+        "nomeProduto": "Produto3",
+        "quantidade": 1,
+        "precoUnitario": 1.0,
+        "tipoProduto": "ELETRODOMESTICO"
+      },
+      {
+        "id": 4,
+        "codigoProduto": 1,
+        "nomeProduto": "Produto4",
+        "quantidade": 1,
+        "precoUnitario": 1.0,
+        "tipoProduto": "ELETRONICO"
+      },
+      {
+        "id": 5,
+        "codigoProduto": 1,
+        "nomeProduto": "Produto5",
+        "quantidade": 1,
+        "precoUnitario": 1.0,
+        "tipoProduto": "ROUPAS"
+      }
+    ]
+  },
+
+  {
+    "id": 3,
+    "numeroPedido": 1,
+    "tipoDocumento": "CNPJ",
+    "documentoCliente": "CPF",
+    "canal": "TELEFONE",
+    "status": "ATIVO",
+    "valorTotal": 5.0,
+    "gerente": "Gerente",
+    "dataHoraCriacao": null,
+    "dataHoraAtualizacao": null,
+    "listPedidos": [
+      {
+        "id": 1,
+        "codigoProduto": 1,
+        "nomeProduto": "Produto1",
+        "quantidade": 1,
+        "precoUnitario": 1.0,
+        "tipoProduto": "BEBIDA"
+      },
+      {
+        "id": 2,
+        "codigoProduto": 1,
+        "nomeProduto": "Produto2",
+        "quantidade": 1,
+        "precoUnitario": 1.0,
+        "tipoProduto": "COMIDA"
+      },
+      {
+        "id": 3,
+        "codigoProduto": 1,
+        "nomeProduto": "Produto3",
+        "quantidade": 1,
+        "precoUnitario": 1.0,
+        "tipoProduto": "ELETRODOMESTICO"
+      },
+      {
+        "id": 4,
+        "codigoProduto": 1,
+        "nomeProduto": "Produto4",
+        "quantidade": 1,
+        "precoUnitario": 1.0,
+        "tipoProduto": "ELETRONICO"
+      },
+      {
+        "id": 5,
+        "codigoProduto": 1,
+        "nomeProduto": "Produto5",
+        "quantidade": 1,
+        "precoUnitario": 1.0,
+        "tipoProduto": "ROUPAS"
+      }
+    ]
+  }
+]

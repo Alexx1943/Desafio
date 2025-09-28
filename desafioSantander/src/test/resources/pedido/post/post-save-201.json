@@ -1,0 +1,54 @@
+{
+  "id": 1,
+  "numeroPedido": 1,
+  "tipoDocumento": "CNPJ",
+  "documentoCliente": "CPF",
+  "canal": "WEB",
+  "status": "ATIVO",
+  "valorTotal": 5.0,
+  "gerente": "Gerente",
+  "dataHoraCriacao": "2025-09-27T19:00:00",
+  "dataHoraAtualizacao": "2025-09-27T19:00:00",
+  "listPedidos": [
+    {
+      "id": 1,
+      "codigoProduto": 1,
+      "nomeProduto": "Produto1",
+      "quantidade": 1,
+      "precoUnitario": 1.0,
+      "tipoProduto": "BEBIDA"
+    },
+    {
+      "id": 2,
+      "codigoProduto": 1,
+      "nomeProduto": "Produto2",
+      "quantidade": 1,
+      "precoUnitario": 1.0,
+      "tipoProduto": "COMIDA"
+    },
+    {
+      "id": 3,
+      "codigoProduto": 1,
+      "nomeProduto": "Produto3",
+      "quantidade": 1,
+      "precoUnitario": 1.0,
+      "tipoProduto": "ELETRODOMESTICO"
+    },
+    {
+      "id": 4,
+      "codigoProduto": 1,
+      "nomeProduto": "Produto4",
+      "quantidade": 1,
+      "precoUnitario": 1.0,
+      "tipoProduto": "ELETRONICO"
+    },
+    {
+      "id": 5,
+      "codigoProduto": 1,
+      "nomeProduto": "Produto5",
+      "quantidade": 1,
+      "precoUnitario": 1.0,
+      "tipoProduto": "ROUPAS"
+    }
+  ]
+}

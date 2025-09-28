@@ -122,8 +122,6 @@ class PedidoServiceTest {
     @DisplayName("deleteAll exclui todos os pedidos da lista ")
     void deleteAllExcluiTodosPedidos() {
 
-        var pedidosToRemove = pedidoUtils.getListaPedidos();
-
         BDDMockito.doNothing().when(repository).deleteAll();
 
         service.deleteAll();
@@ -131,7 +129,31 @@ class PedidoServiceTest {
         Assertions.assertThatNoException().isThrownBy(() -> service.deleteAll());
     }
 
+    @Test
+    @Order(8)
+    @DisplayName("update altera informações do pedido")
+    void updateAlteraDadosPedido() {
 
+        var pedidoToUpdate = pedidoUtils.getPedido();
+
+        pedidoToUpdate.setNumeroPedido(123L);
+
+        BDDMockito.when(repository.findById(pedidoToUpdate.getId())).thenReturn(Optional.of(pedidoToUpdate));
+
+        Assertions.assertThatNoException().isThrownBy(() -> service.update(pedidoToUpdate.getId(), pedidoToUpdate));
+    }
+
+    @Test
+    @Order(9)
+    @DisplayName("update lança ResponseStatusException quando o id não é encontrado")
+    void updateThrowsResponseStatusException_WhenIdIsNotFound() {
+
+        var id = pedidoUtils.getPedido();
+
+        BDDMockito.when(repository.findById(id.getId())).thenReturn(Optional.empty());
+
+        Assertions.assertThatException().isThrownBy(() -> service.update(id.getId(), id)).isInstanceOf(ResponseStatusException.class);
+    }
 
 
 }

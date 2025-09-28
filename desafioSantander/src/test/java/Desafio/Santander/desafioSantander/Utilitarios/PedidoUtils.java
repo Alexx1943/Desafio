@@ -36,12 +36,12 @@ public class PedidoUtils {
                 .listPedidos(listaItens())
                 .valorTotal(5.0)
                 .gerente("Gerente")
-                .dataHoraCriacao(LocalDateTime.now())
-                .dataHoraAtualizacao(LocalDateTime.now()).build();
+                .dataHoraCriacao(null)
+                .dataHoraAtualizacao(null).build();
 
 
         var pedido2 = Pedido.builder()
-                .id(1L).numeroPedido(1L)
+                .id(2L).numeroPedido(1L)
                 .tipoDocumento(TipoDocumento.CNPJ)
                 .documentoCliente("CPF")
                 .canal(Canal.EMAIL)
@@ -49,11 +49,11 @@ public class PedidoUtils {
                 .listPedidos(listaItens())
                 .valorTotal(5.0)
                 .gerente("Gerente")
-                .dataHoraCriacao(LocalDateTime.now())
-                .dataHoraAtualizacao(LocalDateTime.now()).build();
+                .dataHoraCriacao(null)
+                .dataHoraAtualizacao(null).build();
 
         var pedido3 = Pedido.builder()
-                .id(1L).numeroPedido(1L)
+                .id(3L).numeroPedido(1L)
                 .tipoDocumento(TipoDocumento.CNPJ)
                 .documentoCliente("CPF")
                 .canal(Canal.TELEFONE)
@@ -61,8 +61,8 @@ public class PedidoUtils {
                 .listPedidos(listaItens())
                 .valorTotal(5.0)
                 .gerente("Gerente")
-                .dataHoraCriacao(LocalDateTime.now())
-                .dataHoraAtualizacao(LocalDateTime.now()).build();
+                .dataHoraCriacao(null)
+                .dataHoraAtualizacao(null).build();
 
         return new ArrayList<>(List.of(pedido1, pedido2, pedido3));
     }
@@ -78,8 +78,8 @@ public class PedidoUtils {
                 .listPedidos(listaItens())
                 .valorTotal(5.0)
                 .gerente("Gerente")
-                .dataHoraCriacao(LocalDateTime.now())
-                .dataHoraAtualizacao(LocalDateTime.now()).build();
+                .dataHoraCriacao(null)
+                .dataHoraAtualizacao(null).build();
 
         return new ArrayList<>(List.of(pedido));
     }
@@ -95,8 +95,8 @@ public class PedidoUtils {
                 .listPedidos(listaItens())
                 .valorTotal(5.0)
                 .gerente("Gerente")
-                .dataHoraCriacao(LocalDateTime.now())
-                .dataHoraAtualizacao(LocalDateTime.now()).build();
+                .dataHoraCriacao(null)
+                .dataHoraAtualizacao(null).build();
 
         return pedido;
     }
